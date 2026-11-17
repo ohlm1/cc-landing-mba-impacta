@@ -1,52 +1,61 @@
-# Publicação da versão aprovada
+# 💻 Código Comentado | Landing Page Acadêmica
 
-Envio autorizado pelo aluno para o repositório `ohlm1/cc-landing-mba-impacta`, branch `main`, em 16/11/2026. O site é independente do domínio oficial. HTML, CSS, JavaScript, logotipo e fontes preservam a versão aprovada, sem otimizações para estabelecer a medição inicial do PageSpeed Insights.
+### Entenda o código de verdade.
 
-Endereço de publicação: https://ohlm1.github.io/cc-landing-mba-impacta/
+Landing page desenvolvida para apresentar a proposta do **Código Comentado (CC)**: transformar a experiência de aprender programação em algo mais compreensível, explorando não apenas o que cada linha de código faz, mas também **por que ela existe e como contribui para o funcionamento do programa**.
 
-Origem do GitHub Pages: `main` e `/ (root)`. A documentação abaixo registra o desenvolvimento e suas decisões; referências a aprovação pendente descrevem a etapa anterior ao envio. A disponibilidade e os testes de produção são registrados separadamente após o deploy.
+Este projeto foi desenvolvido como parte do módulo executivo **Digital Growth & AI-Driven Marketing**, do MBA em Engenharia de Software da Faculdade Impacta.
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=flat-square&logo=github&logoColor=white)
 
 ---
 
-# Código Comentado — Atividade 3
+## 🌐 Acesse o projeto
 
-Landing page acadêmica independente para receber o anúncio da Atividade 2 e demonstrar a proposta de explicar código linha por linha.
+| Plataforma | Descrição | Link |
+|---|---|---|
+| 🚀 Landing Page | Demonstração acadêmica interativa | [Acessar](https://ohlm1.github.io/cc-landing-mba-impacta/) |
+| 🌎 Código Comentado | Site institucional do projeto original | [Conhecer](https://codigocomentado.com.br) |
+| 💻 GitHub Oficial | Organização e repositórios do Código Comentado | [Explorar](https://github.com/Codigo-Comentado) |
 
-**Aluno:** Lucas Vieira de Lima  
-**E-mail:** lucas.vlima@aluno.impacta.edu.br  
-**Curso:** MBA em Engenharia de Software, Faculdade Impacta  
-**Disciplina:** Digital Growth & AI-Driven Marketing  
-**Professor:** Juliano Motta  
+> **Nota:** esta landing page é um protótipo acadêmico independente. Ela não substitui o site institucional do Código Comentado nem representa o lançamento comercial de novas funcionalidades.
 
-## Executar localmente
+## 🎯 Sobre o projeto
 
-Não há instalação de pacotes nem etapa de build. A página também abre diretamente por `index.html`. Para reproduzir o ambiente de hospedagem em subdiretório, execute na pasta que contém `cc-landing-mba-impacta`:
+O **Código Comentado** nasce da ideia de que aprender programação envolve muito mais do que reproduzir exemplos ou executar comandos corretamente.
 
-```sh
-python -m http.server 8000 --bind 127.0.0.1
-```
+Durante o aprendizado, é comum conseguir fazer um código funcionar e, ainda assim, encontrar dificuldades quando surge a necessidade de modificar uma condição, adaptar uma estrutura ou resolver um problema diferente.
 
-Abra `http://127.0.0.1:8000/cc-landing-mba-impacta/`. Se estiver dentro da pasta do projeto, use o mesmo comando e abra `http://127.0.0.1:8000/`.
+A proposta do CC é aproximar a explicação teórica da prática, incentivando três etapas fundamentais:
 
-## Propósito e persona
+**01. Observe** — Identifique o objetivo do código e seu comportamento.
 
-O CC propõe ensino, prática e compartilhamento de conhecimentos em programação, explicando cada instrução, seu motivo e a relação com o restante do programa. O projeto está em desenvolvimento.
+**02. Entenda** — Compreenda o papel de cada instrução e sua relação com as demais.
 
-A campanha prioriza a persona-hipótese da Atividade 1: aprendiz que executa exemplos, mas encontra dificuldades para compreender e adaptar a lógica. Não há pesquisa com usuários ou resultados educacionais comprovados neste protótipo.
+**03. Adapte** — Modifique elementos do programa e observe como a lógica influencia o resultado.
 
-## Copy de referência e continuidade
+A landing page demonstra essa abordagem por meio de um exemplo interativo de Python.
 
-O complemento V2 e a mensagem de retomada mais recente definem expressamente os textos obrigatórios abaixo. Eles substituem a decisão inicial da conversa, que havia mantido “Entenda o código para adaptar”. Nesta versão, o Hero usa literalmente:
+## ✨ Funcionalidades
 
-- Headline: **Entenda o código de verdade**
-- Subtítulo: **Entenda a lógica de cada linha e pratique adaptar códigos a novos desafios. Conheça a proposta do Código Comentado.**
-- CTA: **Quero entender melhor**
+| Funcionalidade | Descrição |
+|---|---|
+| 🧩 Código comentado | Explicações associadas às instruções de um exemplo Python |
+| 🖱️ Interação por linha | Selecione instruções para compreender suas funções |
+| 🔄 Adaptação da lógica | Modifique o intervalo de uma repetição e observe o resultado |
+| 📊 Execução ilustrada | Acompanhe os valores acumulados ao longo do exemplo |
+| 📱 Design responsivo | Interface adaptada para computadores, tablets e celulares |
+| ♿ Acessibilidade | Navegação por teclado, indicadores de foco e recursos semânticos |
+| 🎨 Identidade visual | Interface baseada nas cores, na tipografia e no conceito do Código Comentado |
 
-Os dois botões principais têm o mesmo rótulo e navegam para `#demonstracao`. Não há formulário, cadastro, checkout ou captura de dados. Os controles do exemplo e a navegação não são conversões concorrentes.
+A demonstração é implementada em JavaScript e representa conceitualmente o comportamento do código Python. Não se trata de um interpretador Python nem de um editor de código livre.
 
-**Conferência documental:** o PDF histórico da Atividade 2 neste workspace ainda contém a versão anterior. Ele não foi alterado nesta retomada da Atividade 3. A correspondência literal foi conferida com a copy obrigatória fornecida pelo aluno no complemento e na retomada. Para uma entrega conjunta com o anúncio histórico, essa divergência precisa ser harmonizada. Não se afirma que os dois PDFs existentes já trazem frases idênticas.
+## 🧠 Demonstração prática
 
-## Demonstração interativa
+A landing page apresenta um exemplo de soma acumulada:
 
 ```python
 total = 0
@@ -57,89 +66,138 @@ for numero in range(1, 4):
 print(total)
 ```
 
-As quatro instruções nas linhas 1, 3, 4 e 6 são selecionáveis com clique ou teclado. As explicações mostram o que cada instrução faz e por que existe. Na prévia do Hero, a seleção troca a explicação no próprio painel.
+**Resultado inicial:**
 
-O desafio altera somente o limite final:
+```text
+6
+```
 
-| Cenário | Números percorridos | Resultado |
-|---|---|---:|
-| `range(1, 4)` | 1, 2, 3 | 6 |
-| `range(1, 6)` | 1, 2, 3, 4, 5 | 15 |
+O visitante pode selecionar as instruções para descobrir o que cada uma faz e por que é necessária.
 
-O JavaScript calcula a soma em um laço equivalente e gera os estados intermediários. **Nenhum código Python do visitante é executado.** Não é um editor livre nem uma funcionalidade confirmada da plataforma oficial. A própria página identifica a experiência como demonstração conceitual.
+Em seguida, é apresentado um desafio simples: **o que acontece se alterarmos o limite da repetição?**
 
-Os números da seção de benefícios são verificáveis na implementação: **1 exemplo, 4 instruções, 1 desafio e 2 resultados**. Não representam alunos, resultados de aprendizagem, avaliações ou provas sociais.
+| Código | Números percorridos | Resultado |
+|---|---|---|
+| `range(1, 4)` | 1, 2 e 3 | 6 |
+| `range(1, 6)` | 1, 2, 3, 4 e 5 | 15 |
 
-## Tecnologias e acessibilidade
+Essa interação ilustra o conceito central da proposta: **compreender o funcionamento de um código facilita o raciocínio necessário para adaptá-lo a novos desafios.**
 
-HTML5 semântico, CSS3 e JavaScript puro. Fonte Inter local, logo original extraído do manual e ícones SVG em linha. Sem framework, CDNs, serviços pagos, analytics ou chaves privadas. Todos os caminhos são relativos e compatíveis com o subdiretório do GitHub Pages. O template V2 foi aplicado conforme `docs/compatibilidade-v2.md`.
+## 🛠️ Tecnologias utilizadas
 
-A página inclui link para pular ao conteúdo, focos visíveis, controles nativos, explicações com `aria-live`, estados `aria-pressed`, opções por rádio acessíveis por setas, contraste elevado e respeito a `prefers-reduced-motion`. Perguntas frequentes usam `details`/`summary`.
+O projeto utiliza uma arquitetura estática, sem necessidade de backend, banco de dados ou serviços pagos.
 
-## Estrutura
+| Tecnologia | Aplicação |
+|---|---|
+| **HTML5** | Estrutura semântica e organização do conteúdo |
+| **CSS3** | Estilização, responsividade, transições e identidade visual |
+| **JavaScript** | Interações, seleção de instruções e simulação da soma |
+| **Inter** | Tipografia principal, carregada localmente |
+| **GitHub Pages** | Hospedagem pública e gratuita da landing page |
+
+A implementação prioriza simplicidade, manutenção e compatibilidade com navegadores modernos.
+
+## 🎨 Identidade visual
+
+A landing page segue a identidade do Código Comentado, com uma estética tecnológica, interfaces inspiradas em editores de código e destaque para a relação entre instrução e explicação.
+
+| Cor | Código | Aplicação |
+|---|---|---|
+| Azul principal | `#2563EB` | Seleções e destaques |
+| Verde | `#10B981` | CTA, resultados e elementos de ação |
+| Fundo escuro | `#1E2937` | Painéis e superfícies |
+| Branco | `#FFFFFF` | Tipografia de alto contraste |
+| Roxo secundário | `#7C3AED` | Detalhes e elementos de sintaxe |
+
+O objetivo visual é manter a experiência clara, agradável e coerente com a identidade da marca.
+
+## 🚀 Como executar localmente
+
+**1. Clone o repositório:**
+
+```bash
+git clone https://github.com/ohlm1/cc-landing-mba-impacta.git
+```
+
+**2. Entre na pasta do projeto:**
+
+```bash
+cd cc-landing-mba-impacta
+```
+
+**3. Inicie um servidor local:**
+
+```bash
+python -m http.server 8000
+```
+
+**4. Abra no navegador:**
+
+```text
+http://localhost:8000
+```
+
+Também é possível abrir diretamente o arquivo `index.html`, pois não há etapa de instalação de pacotes ou compilação.
+
+## 📁 Estrutura do projeto
 
 ```text
 cc-landing-mba-impacta/
-  index.html
-  styles.css
-  script.js
-  .nojekyll
-  .gitignore
-  assets/
-    logo.png
-    simbolo.png
-    fonts/Inter-variable.ttf
-    fonts/OFL.txt
-  README.md
-  PRODUCT.md
-  DESIGN.md
-  docs/
-    direcao.md
-    checklist-avaliacao.md
-    prompts.md
+├── index.html
+├── styles.css
+├── script.js
+├── assets/
+│   ├── logo.png
+│   ├── simbolo.png
+│   └── fonts/
+├── docs/
+├── DESIGN.md
+├── PRODUCT.md
+└── README.md
 ```
 
-## GitHub Pages, somente após aprovação
+Os arquivos estão organizados para facilitar manutenção, documentação e publicação no GitHub Pages.
 
-**Nenhum repositório foi criado e nenhuma publicação foi realizada.** Não alterar o site oficial ou seus repositórios. O destino planejado, ainda não confirmado como ativo, é:
+## 🎓 Contexto acadêmico
 
-`https://ohlm1.github.io/cc-landing-mba-impacta/`
+Este projeto integra uma sequência de atividades desenvolvidas no módulo **Digital Growth & AI-Driven Marketing**, do MBA em Engenharia de Software da **Faculdade Impacta**, sob orientação do professor **Juliano Motta**.
 
-Depois da aprovação do aluno:
+A sequência conecta três etapas do processo de marketing digital:
 
-1. Criar um repositório **novo**, público, `ohlm1/cc-landing-mba-impacta`. Se o nome já existir, verificar o conteúdo e pedir orientação antes de alterá-lo.
-2. Colocar o conteúdo desta pasta na raiz do repositório, com `index.html` diretamente na raiz. Não enviar a pasta externa como uma subpasta adicional.
-3. Em **Settings > Pages**, selecionar publicação a partir da branch `main`, pasta `/ (root)`, e salvar.
-4. Aguardar a publicação e conferir no endereço retornado pelo GitHub se o logo, a fonte, os links e a demonstração carregam no subdiretório.
+| Etapa | Objetivo |
+|---|---|
+| **Atividade 1 — Persona** | Identificar hipóteses sobre o público, suas dificuldades e necessidades |
+| **Atividade 2 — Meta Ads** | Criar uma comunicação persuasiva alinhada à persona |
+| **Atividade 3 — Landing Page** | Construir uma experiência coerente com a promessa do anúncio |
 
-Não precisa de domínio personalizado, arquivo CNAME, backend, banco ou GitHub Actions personalizado. A localização dos controles de configuração pode variar no GitHub.
+O desenvolvimento desta landing page buscou manter a continuidade entre a necessidade identificada na persona, a mensagem do anúncio e a experiência oferecida ao visitante.
 
-## Capturas e PDF
+A atividade também permitiu aplicar conceitos de experiência do usuário (UX), comunicação orientada à conversão (CRO), desenvolvimento front-end e acessibilidade.
 
-Os entregáveis de apresentação ficam na pasta `output/atividade3` do workspace e no pacote completo:
+## 🔍 Limitações e transparência
 
-- `landing-desktop-full.png`: captura integral em navegador, largura 1440 px.
-- `landing-mobile.png`: captura integral em navegador, largura 390 px.
-- `Lucas-Vieira-de-Lima-landing.pdf`: impressão nativa do navegador, com texto selecionável e cores de fundo. É uma página longa para leitura em tela, com zoom ajustado à largura, sem cortes entre seções. Não é mais um PDF de imagem única.
+O Código Comentado é um projeto em desenvolvimento, e esta landing page foi criada exclusivamente como demonstração acadêmica.
 
-As capturas de entrega mostram as quatro respostas das perguntas frequentes expandidas, um estado real da página, para incluir todo o conteúdo. A página inicia com somente a primeira resposta aberta. O CSS de impressão também expande as respostas durante a impressão no navegador.
+- A persona utilizada é uma hipótese exploratória, não um perfil validado por pesquisa de campo.
+- A interação de código é uma demonstração conceitual implementada em JavaScript.
+- As quantidades apresentadas referem-se aos elementos do exemplo, não a resultados educacionais ou indicadores comerciais.
+- A página não coleta dados pessoais, não realiza vendas e não oferece cadastro.
+- Recursos demonstrados aqui não devem ser interpretados como funcionalidades já disponíveis na plataforma oficial.
 
-## Fontes e limitações
+---
 
-- Atividade 1 do autor, PDF Persona-hipótese Código Comentado, 03/11/2026, pp. 1-4.
-- Atividade 2 final, `Lucas_Vieira_de_Lima-anuncio.pdf`, `projeto.yaml` e `prompts.md`, produzidos nesta conversa.
-- Enunciado do professor: `20261110_ME_2026_2_Turma_B_Digital_Growth_AI_Driven_Marketing_Aula_3_Atividade-Landing Page-NOTA.pdf`, cinco páginas, lido integralmente. Páginas 3-4: instruções e seis critérios.
-- Manual de identidade visual fornecido pelo autor: cores, Inter, logotipo e símbolo preservados.
-- Fonte Inter original de [Google Fonts](https://github.com/google/fonts/tree/main/ofl/inter), sob SIL Open Font License 1.1, incluída em `assets/fonts/OFL.txt`.
+## 🔗 Conheça o Código Comentado
 
-O site oficial `https://codigocomentado.com.br` e o [documento de apoio](https://docs.google.com/document/d/1UdbJCbP2D8uHDYLswmZLopnU0ZABiONxY9qExY6kkhY/edit) não ficaram acessíveis na consulta desta produção. Não se atribuem a eles conteúdos que não foram lidos. O enunciado local e os textos fornecidos pelo aluno orientam a entrega.
+O projeto acadêmico apresenta uma pequena demonstração de uma proposta mais ampla: **aprender programação compreendendo a lógica, praticando e compartilhando conhecimento.**
 
-Testes e evidências estão registrados em `docs/checklist-avaliacao.md`. Não houve teste com usuários, pesquisa de conversão ou verificação da disponibilidade de funcionalidades do site oficial.
+Para conhecer a iniciativa original:
 
-## Estado da retomada e desempenho
+🌐 **Site oficial:** https://codigocomentado.com.br
 
-O projeto funcional anterior foi mantido. Foram atualizados copy, tokens de layout, header sticky, transições e revelação moderada. FAQ, cálculo, controles e estrutura de sete seções permanecem. O CSS existente foi formatado para facilitar manutenção.
+💻 **Organização no GitHub:** https://github.com/Codigo-Comentado
 
-O Git do workspace está na branch `master`, sem commits e sem remotos configurados. Os arquivos do projeto ainda são não rastreados. Não se criou repositório local adicional nem remoto, não se fez commit, push ou deploy.
+---
 
-Os testes atuais cobrem 1440, 768, 390 e 375 px. Há verificações de teclado, foco acima do header, âncora abaixo do header, contraste por revisão, conteúdo sem JavaScript e movimento normal/reduzido. As medições de laboratório locais constam em `docs/performance-local.json`: seis amostras, LCP de 120 a 356 ms e CLS 0. Event Timing registrou interações de 16 a 24 ms nas amostras observáveis. Isso não equivale ao INP de campo nem comprova Core Web Vitals de produção. Sem rede ou CPU simuladas e sem site publicado.
+**Código Comentado — Aprender Programação Ensinando Programação.**
+
+*Projeto acadêmico independente · Faculdade Impacta · 2026*
