@@ -1,0 +1,79 @@
+{
+  "browser": "Chromium 151, headless, Playwright",
+  "url": "http://127.0.0.1:8766/cc-landing-mba-impacta/",
+  "tests": [
+    {
+      "width": 1440,
+      "copy": {
+        "headline": "Entenda o código de verdade",
+        "subtitle": "Entenda a lógica de cada linha e pratique adaptar códigos a novos desafios. Conheça a proposta do Código Comentado.",
+        "cta": "Quero entender melhor"
+      },
+      "actions": [
+        {
+          "hash": "#demonstracao",
+          "focus": "demonstracao",
+          "targetTop": 123.984375,
+          "headerBottom": 101
+        },
+        {
+          "hash": "#demonstracao",
+          "focus": "demonstracao",
+          "targetTop": 123.984375,
+          "headerBottom": 101
+        }
+      ],
+      "layout": {
+        "viewport": 1440,
+        "documentWidth": 1440,
+        "clippedCode": 0,
+        "headingCount": 1
+      },
+      "selection": "4 lines in hero and demo passed",
+      "results": "original 6 / adapted 15 / return to 6"
+    },
+    {
+      "width": 390,
+      "copy": {
+        "headline": "Entenda o código de verdade",
+        "subtitle": "Entenda a lógica de cada linha e pratique adaptar códigos a novos desafios. Conheça a proposta do Código Comentado.",
+        "cta": "Quero entender melhor"
+      },
+      "actions": [
+        {
+          "hash": "#demonstracao",
+          "focus": "demonstracao",
+          "targetTop": 123.515625,
+          "headerBottom": 85
+        },
+        {
+          "hash": "#demonstracao",
+          "focus": "demonstracao",
+          "targetTop": 123.515625,
+          "headerBottom": 85
+        }
+      ],
+      "layout": {
+        "viewport": 390,
+        "documentWidth": 390,
+        "clippedCode": 0,
+        "headingCount": 1
+      },
+      "selection": "4 lines in hero and demo passed",
+      "results": "original 6 / adapted 15 / return to 6"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "pdf": {
+    "engine": "Chromium Page.printToPDF",
+    "widthCssPx": 1440,
+    "heightCssPx": 5284,
+    "printBackground": true,
+    "tagged": true,
+    "format": "one continuous page, native text, not a screenshot",
+    "extractedCharacters": 3923,
+    "textSelectionVerified": true
+  },
+  "scope": "Design and sections preserved. Only whitespace after HTML line breaks corrected to prevent joined words on mobile. CSS/JS unchanged. Print-tab-only styles preserve navigation and static header."
+}

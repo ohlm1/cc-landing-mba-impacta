@@ -1,0 +1,163 @@
+{
+  "environment": "Laboratório local em localhost, Chromium headless 151, cache novo por contexto, sem simulação de rede ou CPU. Não representa produção nem usuários reais.",
+  "date": "2026-11-16",
+  "targets": {
+    "lcpMs": 2500,
+    "cls": "próximo de zero",
+    "inpMs": 200
+  },
+  "inpCaveat": "Event Timing local das interações testadas não equivale ao INP de campo. Ausência de eventos registrados significa abaixo do limiar de observação de 16ms, não tempo zero.",
+  "extraTests": [
+    "CTA target visible below sticky header",
+    "content visible with JavaScript disabled",
+    "IntersectionObserver reveal with normal motion"
+  ],
+  "samples": [
+    {
+      "width": 1440,
+      "run": 1,
+      "lcp": 356,
+      "cls": 0,
+      "transferred": 1046976,
+      "events": [
+        {
+          "name": "pointerdown",
+          "duration": 24,
+          "id": 5560
+        },
+        {
+          "name": "pointerup",
+          "duration": 24,
+          "id": 5560
+        },
+        {
+          "name": "click",
+          "duration": 24,
+          "id": 5560
+        }
+      ],
+      "longTasks": [
+        79
+      ]
+    },
+    {
+      "width": 1440,
+      "run": 2,
+      "lcp": 120,
+      "cls": 0,
+      "transferred": 1046976,
+      "events": [
+        {
+          "name": "pointerdown",
+          "duration": 16,
+          "id": 8606
+        },
+        {
+          "name": "pointerup",
+          "duration": 16,
+          "id": 8606
+        },
+        {
+          "name": "click",
+          "duration": 16,
+          "id": 8606
+        }
+      ],
+      "longTasks": [
+        69
+      ]
+    },
+    {
+      "width": 1440,
+      "run": 3,
+      "lcp": 124,
+      "cls": 0,
+      "transferred": 1046976,
+      "events": [
+        {
+          "name": "pointerdown",
+          "duration": 16,
+          "id": 9660
+        },
+        {
+          "name": "pointerup",
+          "duration": 16,
+          "id": 9660
+        },
+        {
+          "name": "click",
+          "duration": 16,
+          "id": 9660
+        }
+      ],
+      "longTasks": [
+        71
+      ]
+    },
+    {
+      "width": 390,
+      "run": 1,
+      "lcp": 140,
+      "cls": 0,
+      "transferred": 1046976,
+      "events": [
+        {
+          "name": "pointerdown",
+          "duration": 16,
+          "id": 3473
+        },
+        {
+          "name": "pointerup",
+          "duration": 16,
+          "id": 3473
+        },
+        {
+          "name": "click",
+          "duration": 16,
+          "id": 3473
+        }
+      ],
+      "longTasks": [
+        63
+      ]
+    },
+    {
+      "width": 390,
+      "run": 2,
+      "lcp": 124,
+      "cls": 0,
+      "transferred": 1046976,
+      "events": [],
+      "longTasks": [
+        66
+      ]
+    },
+    {
+      "width": 390,
+      "run": 3,
+      "lcp": 128,
+      "cls": 0,
+      "transferred": 1046976,
+      "events": [
+        {
+          "name": "pointerdown",
+          "duration": 16,
+          "id": 3625
+        },
+        {
+          "name": "pointerup",
+          "duration": 16,
+          "id": 3625
+        },
+        {
+          "name": "click",
+          "duration": 16,
+          "id": 3625
+        }
+      ],
+      "longTasks": [
+        69
+      ]
+    }
+  ]
+}

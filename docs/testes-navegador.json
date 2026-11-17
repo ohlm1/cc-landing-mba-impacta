@@ -1,0 +1,74 @@
+{
+  "url": "http://127.0.0.1:8766/cc-landing-mba-impacta/",
+  "browser": "Chromium 151 headless (real browser)",
+  "date": "2026-11-16",
+  "tests": [
+    "copy exact match to mandatory wording in latest user request",
+    "two identical CTA labels and same destination",
+    "CTA sets hash and transfers focus",
+    "four instruction explanations and exclusive selection",
+    "adapted result 15 / original result 6",
+    "five adapted accumulation steps",
+    "keyboard Enter and radio ArrowRight/ArrowLeft",
+    "FAQ mouse and keyboard",
+    "hero line selection",
+    "no horizontal overflow at 1440/768/390/375",
+    "1200px container and 20/32px padding",
+    "60/120px section spacing",
+    "sticky header",
+    "no console or page errors",
+    "local assets only"
+  ],
+  "measurements": [
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "height": 5020,
+      "heroCtaBottom": 691.75,
+      "container": 1200,
+      "padding": "32px",
+      "sectionPadding": "120px",
+      "sticky": "sticky",
+      "external": [],
+      "overflow": []
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "height": 5902,
+      "heroCtaBottom": 576.921875,
+      "container": 768,
+      "padding": "32px",
+      "sectionPadding": "120px",
+      "sticky": "sticky",
+      "external": [],
+      "overflow": []
+    },
+    {
+      "width": 390,
+      "scroll": 390,
+      "height": 6440,
+      "heroCtaBottom": 471.71875,
+      "container": 390,
+      "padding": "20px",
+      "sectionPadding": "60px",
+      "sticky": "sticky",
+      "external": [],
+      "overflow": []
+    },
+    {
+      "width": 375,
+      "scroll": 375,
+      "height": 6508,
+      "heroCtaBottom": 500.609375,
+      "container": 375,
+      "padding": "20px",
+      "sectionPadding": "60px",
+      "sticky": "sticky",
+      "external": [],
+      "overflow": []
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B1220">
+  <title>Código Comentado | Entenda o código de verdade</title>
+  <meta name="description" content="Entenda a lógica de cada linha e pratique adaptar códigos a novos desafios. Explore uma demonstração interativa da proposta do Código Comentado, sem cadastro.">
+  <meta property="og:title" content="Código Comentado — Entenda o código de verdade">
+  <meta property="og:description" content="Uma demonstração de código explicado linha por linha. Observe, entenda e adapte um exemplo de Python.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" type="image/png" href="./assets/simbolo.png">
+  <link rel="preload" href="./assets/fonts/Inter-variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <!-- THESIS: A compreensão se torna visível quando uma linha encontra sua explicação.
+  OWN-WORLD: Identidade existente do CC. Azul #2563EB, verde #10B981, Inter e editores escuros com código legível.
+  STORY: Reconhecer a dificuldade, explicar quatro instruções, modificar um intervalo e conferir a soma.
+  FIRST VIEWPORT: Hero em duas colunas. Promessa literal à esquerda, editor e explicação à direita. CTA visível leva à demonstração.
+  FORM: Composição especificada no briefing do usuário, dentro da marca existente. Sem sorteio de nova identidade.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></symbol>
+    <symbol id="branch" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="6" r="2"/><path d="M6 7v10m12-9c0 5-12 3-12 8"/></symbol>
+    <symbol id="search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></symbol>
+    <symbol id="file" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8zm0 0v6h5"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  </svg>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Código Comentado, início"><img src="./assets/logo.png" alt="Código Comentado" width="468" height="162" decoding="async" fetchpriority="high"></a>
+      <nav aria-label="Navegação principal"><a href="#metodo">O método</a><a href="#duvidas">Dúvidas</a></nav>
+      <span class="header-note">Aprenda entendendo.</span>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section id="inicio" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="product-definition">Programação explicada, linha por linha.</p>
+          <h1>Entenda o código de verdade</h1>
+          <p class="hero-description">Entenda a lógica de cada linha e pratique adaptar códigos a novos desafios. Conheça a proposta do Código Comentado.</p>
+          <a class="cta" href="#demonstracao">Quero entender melhor<svg aria-hidden="true"><use href="#arrow"/></svg></a>
+          <p class="cta-note">Explore o exemplo aqui mesmo. Sem cadastro.</p>
+        </div>
+        <div class="hero-example">
+          <div class="editor preview-editor" aria-label="Prévia interativa de código comentado">
+            <div class="editor-top"><span class="file-name"><svg aria-hidden="true"><use href="#file"/></svg>primeiro-passo.py</span><span class="language">Python</span></div>
+            <div class="code-lines" data-editor="hero">
+              <button class="code-line" data-line="1" aria-pressed="false" aria-label="Explicar linha 1: total igual a zero"><span class="line-number">1</span><code>total <span class="syntax-operator">=</span> <span class="syntax-number">0</span></code></button>
+              <div class="code-line blank" aria-hidden="true"><span class="line-number">2</span></div>
+              <button class="code-line is-active" data-line="3" aria-pressed="true" aria-label="Explicar linha 3: laço de repetição"><span class="line-number">3</span><code><span class="syntax-keyword">for</span> numero <span class="syntax-keyword">in</span> <span class="syntax-function">range</span>(<span class="syntax-number">1</span>, <span class="syntax-number">4</span>):</code><svg class="line-pointer" aria-hidden="true"><use href="#arrow"/></svg></button>
+              <button class="code-line" data-line="4" aria-pressed="false" aria-label="Explicar linha 4: acumular o número"><span class="line-number">4</span><code>    total <span class="syntax-operator">+=</span> numero</code></button>
+              <div class="code-line blank" aria-hidden="true"><span class="line-number">5</span></div>
+              <button class="code-line" data-line="6" aria-pressed="false" aria-label="Explicar linha 6: apresentar o total"><span class="line-number">6</span><code><span class="syntax-function">print</span>(total)</code></button>
+            </div>
+            <div class="preview-explanation" aria-live="polite" aria-atomic="true"><span class="explanation-number" data-hero-number>03</span><div><strong data-hero-title>O limite também explica a lógica.</strong><p data-hero-text>O intervalo começa em 1 e para antes de 4. Por isso, o laço percorre 1, 2 e 3.</p></div></div>
+            <div class="editor-bottom"><span>Selecione uma instrução para entender.</span><span class="result-dot" aria-hidden="true"></span></div>
+          </div>
+          <p class="concept-note">Demonstração conceitual do método.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pain-section section" aria-labelledby="pain-title">
+      <div class="container">
+        <div class="section-heading"><h2 id="pain-title">Seu código funciona.<br> Mas você sabe modificá-lo?</h2><p>Entre executar um exemplo e resolver um novo problema, existe uma lógica para entender.</p></div>
+        <div class="pain-grid">
+          <article class="pain-item"><svg class="feature-icon blue" aria-hidden="true"><use href="#code"/></svg><h3>Funciona. Mas por quê?</h3><p>Você reproduz o exemplo, mas ainda não consegue explicar o papel de cada linha.</p></article>
+          <article class="pain-item"><svg class="feature-icon green" aria-hidden="true"><use href="#branch"/></svg><h3>Mudou o exercício. E agora?</h3><p>Uma condição diferente é suficiente para você não saber por onde começar.</p></article>
+          <article class="pain-item"><svg class="feature-icon violet" aria-hidden="true"><use href="#search"/></svg><h3>Outro exemplo. Outra busca.</h3><p>A solução acaba dependendo de encontrar um código parecido para copiar.</p></article>
+        </div>
+        <p class="hypothesis-note">Situações ilustrativas da persona-hipótese da campanha.</p>
+      </div>
+    </section>
+
+    <section id="demonstracao" class="demo-section section" aria-labelledby="demo-title" tabindex="-1">
+      <div class="container">
+        <div class="section-heading demo-heading"><div><h2 id="demo-title">Uma linha muda.<br> A lógica faz sentido.</h2><p>Selecione uma instrução. Entenda o motivo. Depois, adapte o intervalo.</p></div><span class="demo-label">Demonstração interativa</span></div>
+        <noscript><p class="noscript-note">Ative o JavaScript para selecionar linhas e adaptar o exemplo. No original, a soma de 1, 2 e 3 é 6. No adaptado, a soma de 1 a 5 é 15.</p></noscript>
+        <div class="demo-layout">
+          <div class="editor demo-editor">
+            <div class="editor-top"><span class="file-name"><svg aria-hidden="true"><use href="#file"/></svg>soma-comentada.py</span><span class="language">Python</span></div>
+            <div class="code-lines" data-editor="demo">
+              <button class="code-line" data-line="1" aria-pressed="false" aria-describedby="line-explanation" aria-label="Explicar linha 1: inicializar total"><span class="line-number">1</span><code>total <span class="syntax-operator">=</span> <span class="syntax-number">0</span></code></button>
+              <div class="code-line blank" aria-hidden="true"><span class="line-number">2</span></div>
+              <button class="code-line is-active" data-line="3" aria-pressed="true" aria-describedby="line-explanation" aria-label="Explicar linha 3: percorrer o intervalo"><span class="line-number">3</span><code><span class="syntax-keyword">for</span> numero <span class="syntax-keyword">in</span> <span class="syntax-function">range</span>(<span class="syntax-number">1</span>, <span class="syntax-number" id="range-limit">4</span>):</code><svg class="line-pointer" aria-hidden="true"><use href="#arrow"/></svg></button>
+              <button class="code-line" data-line="4" aria-pressed="false" aria-describedby="line-explanation" aria-label="Explicar linha 4: adicionar ao total"><span class="line-number">4</span><code>    total <span class="syntax-operator">+=</span> numero</code></button>
+              <div class="code-line blank" aria-hidden="true"><span class="line-number">5</span></div>
+              <button class="code-line" data-line="6" aria-pressed="false" aria-describedby="line-explanation" aria-label="Explicar linha 6: imprimir resultado"><span class="line-number">6</span><code><span class="syntax-function">print</span>(total)</code></button>
+            </div>
+            <div class="console" aria-live="polite" aria-atomic="true"><span>Saída do exemplo</span><output id="result" aria-label="Resultado da soma">6</output><span class="console-formula" id="formula">1 + 2 + 3 = 6</span></div>
+          </div>
+          <aside class="line-explanation" id="line-explanation" aria-live="polite" aria-atomic="true">
+            <span class="explanation-number" id="explanation-number">03</span>
+            <p class="line-caption" id="line-caption">Linha 3</p>
+            <h3 id="explanation-title">O último número fica de fora.</h3>
+            <p id="explanation-text">range(1, 4) começa em 1 e para antes de 4. O laço percorre os números 1, 2 e 3.</p>
+            <div class="why-note"><strong>Por que essa linha existe?</strong><p id="explanation-why">Ela define quais valores serão somados e quantas vezes a instrução seguinte será repetida.</p></div>
+          </aside>
+        </div>
+        <div class="challenge">
+          <div class="challenge-copy"><h3>E se o limite fosse 6?</h3><p>Troque apenas o limite final e veja quais valores entram na soma.</p></div>
+          <fieldset class="scenario-controls"><legend class="sr-only">Escolha o intervalo da demonstração</legend><label><input type="radio" name="scenario" value="4" checked><span>Original <code>range(1, 4)</code></span></label><label><input type="radio" name="scenario" value="6"><span>Adaptado <code>range(1, 6)</code></span></label></fieldset>
+        </div>
+        <div class="execution" aria-label="Valores acumulados em cada iteração"><div class="execution-heading"><strong>Acompanhe o total</strong><span>Começa em <code>total = 0</code></span></div><ol id="execution-steps"><li><span>Adiciona 1</span><strong>total = 1</strong></li><li><span>Adiciona 2</span><strong>total = 3</strong></li><li><span>Adiciona 3</span><strong>total = 6</strong></li></ol></div>
+        <p class="demo-disclosure">A interação calcula este exemplo em JavaScript. Não executa Python nem representa um editor disponível na plataforma oficial.</p>
+      </div>
+    </section>
+
+    <section id="metodo" class="method-section section" aria-labelledby="method-title">
+      <div class="container"><div class="section-heading"><h2 id="method-title">Entender é parte do caminho.</h2><p>A proposta didática do CC conecta a leitura do código à prática de modificar sua lógica.</p></div>
+        <ol class="method-grid"><li><span class="method-step">01</span><h3>Observe</h3><p>Leia o exemplo e identifique o que ele tenta resolver.</p><code>O que este código faz?</code></li><li><span class="method-step">02</span><h3>Entenda</h3><p>Relacione cada instrução ao comportamento do programa.</p><code>Por que esta linha existe?</code></li><li><span class="method-step">03</span><h3>Adapte</h3><p>Mude um valor e observe como o resultado se transforma.</p><code>E se eu mudar o intervalo?</code></li></ol>
+      </div>
+    </section>
+
+    <section class="proof-section section" aria-labelledby="proof-title"><div class="container proof-layout"><div><h2 id="proof-title">O que você pode<br> explorar aqui.</h2><p>Quantidades da própria demonstração.<br> Sem promessa de resultado educacional.</p></div><div class="proof-grid"><div><h3>exemplo de Python</h3><strong class="proof-number">1</strong><p>Uma soma acumulada, do início ao resultado.</p></div><div><h3>instruções explicadas</h3><strong class="proof-number">4</strong><p>Inicialização, repetição, soma e saída.</p></div><div><h3>desafio de adaptação</h3><strong class="proof-number">1</strong><p>Altere o limite de 4 para 6.</p></div><div><h3>resultados demonstrados</h3><strong class="proof-number">2</strong><p>Confira as somas 6 e 15.</p></div></div></div></section>
+
+    <section id="duvidas" class="faq-section section" aria-labelledby="faq-title"><div class="container faq-layout"><div><h2 id="faq-title">Antes de seguir,<br> vale entender.</h2><p>Respostas sobre a proposta<br> e os limites deste protótipo.</p></div><div class="faq-list">
+      <details open><summary>O Código Comentado serve apenas para iniciantes?<svg aria-hidden="true"><use href="#plus"/></svg></summary><p>A proposta contempla diferentes níveis. Esta campanha prioriza quem já executa exemplos e quer compreender a lógica para adaptá-los.</p></details>
+      <details><summary>O que diferencia o CC de um repositório?<svg aria-hidden="true"><use href="#plus"/></svg></summary><p>A proposta é explicar cada linha, seu motivo e o contexto. O objetivo é ajudar a relacionar as instruções e refletir sobre como modificá-las.</p></details>
+      <details><summary>O projeto já está disponível?<svg aria-hidden="true"><use href="#plus"/></svg></summary><p>O CC está em desenvolvimento, conforme a ficha do autor. Esta página é um protótipo acadêmico independente. A demonstração funciona aqui, sem confirmar recursos disponíveis no site oficial.</p></details>
+      <details><summary>O conteúdo é gratuito?<svg aria-hidden="true"><use href="#plus"/></svg></summary><p>Esta demonstração pode ser explorada sem pagamento ou cadastro. Os planos e preços da plataforma CC ainda dependem de definição e validação.</p></details>
+    </div></div></section>
+
+    <section class="closing section" aria-labelledby="closing-title"><div class="container closing-layout"><img src="./assets/simbolo.png" width="160" height="162" alt="" loading="lazy" decoding="async"><div><h2 id="closing-title">Cada linha tem um porquê.</h2><p>Comece por um exemplo. Entenda as instruções.<br> Experimente uma mudança na lógica.</p><a class="cta" href="#demonstracao">Quero entender melhor<svg aria-hidden="true"><use href="#arrow"/></svg></a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-top"><span>Código Comentado</span><span>Aprender Programação Ensinando Programação.</span></div><p>Protótipo acadêmico desenvolvido para o MBA em Engenharia de Software da Faculdade Impacta — Digital Growth &amp; AI-Driven Marketing, 2026.</p><p>Lucas Vieira de Lima. Professor Juliano Motta. Projeto independente do site oficial.</p></div></footer>
+</body>
+</html>

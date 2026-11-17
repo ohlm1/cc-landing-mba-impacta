@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-17T01:06:30.583859+00:00",
+  "title": "Design System: Código Comentado",
+  "extensions": {
+    "colorMeta": {
+      "blue": {
+        "role": "secondary",
+        "displayName": "Azul de seleção"
+      },
+      "green": {
+        "role": "primary",
+        "displayName": "Verde de ação e resultado"
+      },
+      "violet": {
+        "role": "tertiary",
+        "displayName": "Roxo de identidade"
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Painel escuro"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Promessa do hero",
+        "purpose": "Headline literal da Atividade 2."
+      },
+      "code": {
+        "displayName": "Código monoespaçado",
+        "purpose": "Código, números e acumulados."
+      }
+    },
+    "shadows": [
+      {
+        "name": "preview-editor",
+        "value": "0 24px 65px #03071170",
+        "purpose": "Editor de prévia no hero."
+      },
+      {
+        "name": "cta-hover",
+        "value": "0 10px 28px #06171166",
+        "purpose": "Hover da CTA."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-transition",
+        "value": "300ms",
+        "purpose": "Mudanças de cor, fundo e borda."
+      },
+      {
+        "name": "faq-icon",
+        "value": "transform 300ms",
+        "purpose": "Rotação de 45deg ao abrir."
+      },
+      {
+        "name": "step-in",
+        "value": "300ms ease-out both",
+        "purpose": "translateY(4px) e opacity até repouso, sem filtro."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation:none;transition:none;scroll-behavior:auto",
+        "purpose": "Preferência de redução de movimento; editor sem rotação."
+      },
+      {
+        "name": "section-in",
+        "value": "450ms ease-out both",
+        "purpose": "Revelação única por IntersectionObserver, sem esconder conteúdo na ausência de JS."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1500px"
+      },
+      {
+        "name": "compact-max",
+        "value": "1100px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "850px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "600px"
+      }
+    ],
+    "layoutV2": {
+      "containerMaxWidth": "1200px",
+      "paddingMobile": "20px",
+      "paddingDesktop": "32px",
+      "sectionMobile": "60px",
+      "sectionDesktop": "120px",
+      "header": "sticky / blur12px / z50",
+      "skipLinkZIndex": 100
+    }
+  },
+  "components": [
+    {
+      "name": "CTA principal",
+      "kind": "button",
+      "description": "Link local único para experimentar o exemplo.",
+      "html": "<a class=\"ds-cta\" href=\"#demonstracao\">Quero entender melhor <span aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-cta{display:inline-flex;align-items:center;justify-content:center;gap:26px;min-height:56px;padding:15px 24px;background:var(--green,#10b981);color:#05251d;border-radius:12px;font:700 16px Inter,system-ui,sans-serif;text-decoration:none;transition:background 300ms,box-shadow 300ms}.ds-cta:hover{background:#25d39b;box-shadow:0 10px 28px #06171166}.ds-cta:focus-visible{outline:3px solid #91bcff;outline-offset:5px}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}",
+      "refersTo": "button-primary"
+    },
+    {
+      "name": "Navegação",
+      "kind": "nav",
+      "description": "Links de seção, sem menu colapsável.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegação principal\"><a href=\"#metodo\">O método</a><a href=\"#duvidas\">Dúvidas</a></nav>",
+      "css": ".ds-nav{display:flex;gap:38px;font:14px Inter,system-ui,sans-serif}.ds-nav a{color:#bdc9d9;text-decoration:none;transition:color 300ms}.ds-nav a:hover{color:#fff}.ds-nav a:focus-visible{outline:3px solid #91bcff;outline-offset:5px}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Tag de demonstração",
+      "kind": "chip",
+      "description": "Identificação informativa sem comportamento de botão.",
+      "html": "<span class=\"ds-tag\">Demonstração interativa</span>",
+      "css": ".ds-tag{display:inline-block;font:12px Inter,system-ui,sans-serif;color:#83e6c5;padding:7px 12px;border:1px solid #235e52;border-radius:6px;white-space:nowrap}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Explicação de linha",
+      "kind": "card",
+      "description": "Superfície que explica a instrução selecionada.",
+      "html": "<aside class=\"ds-explain\"><span>03</span><p>Linha 3</p><h3>O último número fica de fora.</h3><p>range(1, 4) começa em 1 e para antes de 4.</p></aside>",
+      "css": ".ds-explain{background:var(--panel,#1e2937);padding:32px 30px;border-radius:14px;font-family:Inter,system-ui,sans-serif;color:#fff}.ds-explain>span{font:600 39px/1.2 Consolas,monospace;color:#62e6b8}.ds-explain h3{font-size:26px;line-height:1.25;letter-spacing:-.035em;margin:0 0 16px}.ds-explain p{color:#c1cfdf;font-size:15px;line-height:1.8}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}",
+      "refersTo": "explanation"
+    },
+    {
+      "name": "Instrução selecionada",
+      "kind": "button",
+      "description": "Botão de código; seleção real é controlada pelo script da página.",
+      "html": "<button class=\"ds-line\" aria-pressed=\"true\"><span>3</span><code><b>for</b> numero <b>in</b> range(1, 4):</code></button>",
+      "css": ".ds-line{display:flex;width:100%;gap:24px;align-items:center;padding:5px 26px;min-height:47px;border:0;background:#2563eb20;box-shadow:inset 2px 0 var(--blue,#2563eb);color:#e7edf8;font:19px/1.6 Inter,system-ui,sans-serif;text-align:left;cursor:pointer;transition:background 300ms}.ds-line code{font-family:Consolas,monospace;white-space:pre}.ds-line>span{font:13px Consolas,monospace;color:#95bcff}.ds-line b{font-weight:400;color:#b69dff}.ds-line:hover{background:#ffffff08}.ds-line:focus-visible{outline:3px solid #91bcff;outline-offset:-3px}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Opção de cenário",
+      "kind": "input",
+      "description": "Radio nativo; demonstração original e adaptada usam o mesmo padrão.",
+      "html": "<label class=\"ds-option\"><input type=\"radio\" name=\"ds-scenario\" checked><span>Original <code>range(1, 4)</code></span></label>",
+      "css": ".ds-option{position:relative;cursor:pointer;font-family:Inter,system-ui,sans-serif}.ds-option input{position:absolute;width:1px;height:1px;opacity:0}.ds-option>span{display:flex;flex-direction:column;gap:3px;font-size:12px;color:#b7c8de;padding:11px 16px;border:1px solid #3b4c64;border-radius:12px;transition:background 300ms,border-color 300ms}.ds-option code{font:14px Consolas,monospace;color:#edf4ff}.ds-option input:checked+span{background:#143b34;border-color:#24bf91;color:#7ce6c5}.ds-option input:focus-visible+span{outline:3px solid #91bcff;outline-offset:5px}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}"
+    },
+    {
+      "name": "Etapa acumulada",
+      "kind": "custom",
+      "description": "Última etapa da trilha; valores reais são calculados no script.",
+      "html": "<div class=\"ds-step\"><span>Adiciona 3</span><strong>total = 6</strong></div>",
+      "css": ".ds-step{display:flex;flex-direction:column;gap:7px;background:#174237;border-radius:7px;padding:14px 17px;font-family:Inter,system-ui,sans-serif}.ds-step>span{font-size:11px;color:#b0c6d8}.ds-step strong{font:500 16px/1.4 Consolas,monospace;color:#6ee6be}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A compreensão se torna visível quando uma linha encontra sua explicação.",
+    "overview": "Registro do contrato HTML e da identidade existente do CC. A composição foi prescrita pelo usuário; não é uma proposta de nova identidade. O editor e a trilha de execução tornam a explicação verificável.",
+    "keyCharacteristics": [
+      "Inter local obrigatória",
+      "Identidade escura",
+      "Seleção azul",
+      "Ação e resultado verdes",
+      "Explicação associada à instrução"
+    ],
+    "rules": [
+      {
+        "name": "Identidade existente",
+        "body": "Preservar logo, Inter e paleta do manual.",
+        "section": "colors"
+      },
+      {
+        "name": "Hierarquia didática",
+        "body": "Promessa, instrução, motivo e resultado; preservar a copy da Atividade 2.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "Do manter CTA Quero entender melhor para #demonstracao.",
+      "Do preservar foco, semântica, live regions e reduced motion.",
+      "Do distinguir simulação JavaScript de execução Python."
+    ],
+    "donts": [
+      "Don’t inventar preços, depoimentos, alunos ou resultados educacionais.",
+      "Don’t criar repositório ou publicar antes da aprovação.",
+      "Don’t alterar site oficial ou redesenhar a composição prescrita."
+    ]
+  }
+}
