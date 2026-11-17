@@ -17,7 +17,6 @@ Landing page acadêmica independente para receber o anúncio da Atividade 2 e de
 **Curso:** MBA em Engenharia de Software, Faculdade Impacta  
 **Disciplina:** Digital Growth & AI-Driven Marketing  
 **Professor:** Juliano Motta  
-**Entrega:** 22/11/2026. Atividade de 35 pontos.
 
 ## Executar localmente
 
